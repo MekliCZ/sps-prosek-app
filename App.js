@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import {DrawerNavigator} from 'react-navigation';
 import ClassificationScreen from "./screens/Classification/Screen";
+import AttendanceScreen from "./screens/Attendance/Screen";
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
@@ -38,7 +39,7 @@ const DrawerNavigatorScreens = {
         }
     },
     Attendance: {
-        screen: TodoScreen,
+        screen: AttendanceScreen,
         navigationOptions: {
             drawerLabel: 'Docházka',
         }
